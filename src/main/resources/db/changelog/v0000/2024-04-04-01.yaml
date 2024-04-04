@@ -1,0 +1,29 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  1
+       author: StBenji
+       changes:
+         -  createTable:
+              schemaName: public
+              tableName: Student
+              columns:
+                -  column:
+                     autoIncrement: true
+                     constraints:
+                       nullable: false
+                       primaryKey: true
+                       primaryKeyName: STUD_ID
+                     name:  ID
+                     type:  INT
+                - column:
+                    name: name
+                    type: varchar(255)
+                -  column:
+                    name: email
+                    type: varchar(255)
+                - column:
+                    name: age
+                    type: varchar(255)
+                - column:
+                    name: birthday
+                    type: varchar(255)

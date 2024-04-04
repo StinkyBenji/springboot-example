@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: StBenji
+      changes:
+        - tagDatabase:
+            tag: ver_1.0
