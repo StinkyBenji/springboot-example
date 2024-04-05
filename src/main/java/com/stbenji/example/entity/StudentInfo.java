@@ -13,7 +13,7 @@ import java.time.Period;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Student Info")
+@Table(name = "STUDENT_INFO")
 public class StudentInfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

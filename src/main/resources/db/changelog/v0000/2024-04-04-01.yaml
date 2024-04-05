@@ -5,7 +5,7 @@ databaseChangeLog:
        changes:
          -  createTable:
               schemaName: public
-              tableName: Student
+              tableName: STUDENT_INFO
               columns:
                 -  column:
                      autoIncrement: true
