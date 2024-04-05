@@ -16,14 +16,20 @@ databaseChangeLog:
                      name:  ID
                      type:  INT
                 - column:
-                    name: name
+                    name: StudentId
+                    type: BIGINT
+                - column:
+                    name: Name
                     type: varchar(255)
                 -  column:
-                    name: email
+                    name: Email
                     type: varchar(255)
                 - column:
-                    name: age
+                    name: Age
                     type: varchar(255)
                 - column:
-                    name: birthday
+                    name: Birthday
+                    type: varchar(255)
+                - column:
+                    name: createdAt
                     type: varchar(255)
