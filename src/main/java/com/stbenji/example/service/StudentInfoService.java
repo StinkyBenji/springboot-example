@@ -18,10 +18,6 @@ public class StudentInfoService {
     private final StudentInfoRepository studentInfoRepository;
     private final StudentInfoMapper mapper;
 
-//    public Optional<Student> getStudents(Long id) {
-//        return studentInfoRepository.findById(id);
-//    }
-
     @Transactional
     public void registerNewStudent(StudentInfoDto dto) {
         studentInfoRepository.save(mapper.fromStudentInfoDto(dto));
