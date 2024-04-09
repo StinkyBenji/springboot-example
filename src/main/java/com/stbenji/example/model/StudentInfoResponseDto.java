@@ -15,7 +15,6 @@ public class StudentInfoResponseDto {
     private Long studentId;
     private String name;
     private String email;
-    private String age;
     private LocalDate dob;
     private LocalDateTime createdAt;
 }

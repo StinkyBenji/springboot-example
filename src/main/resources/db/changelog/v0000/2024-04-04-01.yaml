@@ -1,35 +1,32 @@
 databaseChangeLog:
-  -  changeSet:
-       id:  1
-       author: StBenji
-       changes:
-         -  createTable:
-              schemaName: public
-              tableName: STUDENT_INFO
-              columns:
-                -  column:
-                     autoIncrement: true
-                     constraints:
-                       nullable: false
-                       primaryKey: true
-                       primaryKeyName: STUD_ID
-                     name:  ID
-                     type:  INT
-                - column:
-                    name: StudentId
-                    type: BIGINT
-                - column:
-                    name: Name
-                    type: varchar(255)
-                -  column:
-                    name: Email
-                    type: varchar(255)
-                - column:
-                    name: Age
-                    type: varchar(255)
-                - column:
-                    name: Birthday
-                    type: varchar(255)
-                - column:
-                    name: createdAt
-                    type: varchar(255)
+  - changeSet:
+      id: 1
+      author: StBenji
+      changes:
+        - createTable:
+            schemaName: public
+            tableName: STUDENT_INFO
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: STUD_ID
+                  name: ID
+                  type: INT
+              - column:
+                  name: StudentId
+                  type: BIGINT
+              - column:
+                  name: Name
+                  type: varchar(255)
+              - column:
+                  name: Email
+                  type: varchar(255)
+              - column:
+                  name: Birthday
+                  type: varchar(255)
+              - column:
+                  name: createdAt
+                  type: varchar(255)

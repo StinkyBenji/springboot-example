@@ -40,12 +40,9 @@ public class StudentInfo {
     @Column(name = "CreatedAt")
     private LocalDateTime createdAt;
 
-    public Integer getAge(LocalDate dob) {
-        return Period.between(dob, LocalDate.now()).getYears();
-    }
-
-    public Integer setAge(LocalDate dob) {
-        return Period.between(dob, LocalDate.now()).getYears();
+    public Integer getAge() {
+        age = Period.between(dob, LocalDate.now()).getYears();
+        return age;
     }
 
 }

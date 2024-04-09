@@ -11,9 +11,7 @@ import org.mapstruct.ReportingPolicy;
 public interface StudentInfoMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
-    @Mapping(target = "age", ignore = true)
     StudentInfo fromStudentInfoDto(StudentInfoDto dto);
-    StudentInfoDto toStudentInfoDto(StudentInfo entity);
     StudentInfoResponseDto toStudentInfoResponseDto(StudentInfo entity);
 
 }
